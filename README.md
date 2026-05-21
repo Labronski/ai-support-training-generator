@@ -2,7 +2,7 @@
 
 An AI-powered tool that automatically generates comprehensive training materials for technical support agents by analyzing support conversation data and using LLMs to produce structured, ready-to-use training content.
 
-Built as a hackathon project to solve the problem of keeping support training materials current as products evolve — instead of manually writing docs, this tool pulls real conversation data and generates them automatically.
+Built as a hackathon project to solve the problem of keeping support training materials current as products evolve — instead of manually writing docs. This tool pulls real conversation data and generates them automatically.
 
 
 ---
@@ -30,10 +30,10 @@ Support agent training is time-consuming to create and quickly goes stale. This 
 ## Tech Stack
 
 - **Python 3.8+**
-- **OpenAI API** (GPT-4) or **Anthropic API** (Claude) — training material generation
-- **Intercom REST API** — conversation data source
-- **Confluence REST API** — optional documentation enrichment
-- **python-dotenv** — environment configuration
+- **OpenAI API** (GPT-4) or **Anthropic API** (Claude): training material generation
+- **Intercom REST API**: conversation data source
+- **Confluence REST API**: optional documentation enrichment
+- **python-dotenv**: environment configuration
 
 
 ---
@@ -129,15 +129,15 @@ The script will:
 
 For each product area, the tool generates five document types:
 
-**Foundational Knowledge** — Core concepts, terminology, and product-specific fundamentals every agent needs to know.
+**Foundational Knowledge**: Core concepts, terminology, and product-specific fundamentals every agent needs to know.
 
-**Handling Examples** — Real-world issue examples with recommended agent responses, key tips, and common pitfalls.
+**Handling Examples**: Real-world issue examples with recommended agent responses, key tips, and common pitfalls.
 
-**Test Scenarios** — Realistic practice scenarios with expected agent actions and evaluation criteria.
+**Test Scenarios**: Realistic practice scenarios with expected agent actions and evaluation criteria.
 
-**Quizzes** — Multiple choice, true/false, short answer, and scenario-based questions with full answer keys.
+**Quizzes**: Multiple choice, true/false, short answer, and scenario-based questions with full answer keys.
 
-**Escalation Guidelines** — Clear criteria for when to escalate, what information to include, and what to try first.
+**Escalation Guidelines**: Clear criteria for when to escalate, what information to include, and what to try first.
 
 
 ---
