@@ -4,13 +4,11 @@ An AI-powered tool that automatically generates comprehensive training materials
 
 Built as a hackathon project to solve the problem of keeping support training materials current as products evolve — instead of manually writing docs, this tool pulls real conversation data and generates them automatically.
 
----
 
 ## What It Does
 
 Support agent training is time-consuming to create and quickly goes stale. This tool connects to your support platform (Intercom), pulls recent conversation data, categorizes it by product area, and uses AI to generate a full training package for each area — including foundational knowledge, worked examples, practice scenarios, quizzes, and escalation guidelines.
 
----
 
 ## Features
 
@@ -22,7 +20,6 @@ Support agent training is time-consuming to create and quickly goes stale. This 
 - Timestamped output directories for versioning
 - Fully configurable via environment variables
 
----
 
 ## Tech Stack
 
@@ -32,7 +29,6 @@ Support agent training is time-consuming to create and quickly goes stale. This 
 - **Confluence REST API** — optional documentation enrichment
 - **python-dotenv** — environment configuration
 
----
 
 ## Project Structure
 
@@ -55,7 +51,6 @@ Support agent training is time-consuming to create and quickly goes stale. This 
         └── ...
 ```
 
----
 
 ## Setup
 
@@ -100,7 +95,6 @@ MAX_CONVERSATIONS_PER_AREA=100
 LOG_LEVEL=INFO
 ```
 
----
 
 ## Usage
 
@@ -116,7 +110,6 @@ The script will:
 
 **Tip:** Start with `DAYS_BACK=7` for a quick test run before processing larger datasets.
 
----
 
 ## Generated Material Types
 
@@ -132,7 +125,6 @@ For each product area, the tool generates five document types:
 
 **Escalation Guidelines** — Clear criteria for when to escalate, what information to include, and what to try first.
 
----
 
 ## Configuration
 
@@ -149,7 +141,6 @@ PRODUCT_AREAS = [
 ]
 ```
 
----
 
 ## Notes
 
